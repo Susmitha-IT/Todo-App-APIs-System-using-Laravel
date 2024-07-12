@@ -1,7 +1,9 @@
 # User-Authentication-System-using-Laravel
-
+- Execution Video : https://drive.google.com/file/d/1LFJ6rHNfuDj8ewuW40drnuF5lIqxdcpQ/view?usp=drive_link
+  
  **Home Page**
-   ![image](https://github.com/user-attachments/assets/d4f622c6-90e5-4e1c-be9e-6f8bc48a0701)
+   ![image](https://github.com/user-attachments/assets/305fb92b-4626-4399-9295-7c6688fb31e7)
+
    
 
 1. **Database Interaction Using Laravel Eloquent**
@@ -11,8 +13,10 @@
 
 3. **Backend Validation**
    - Validate the name, email, and password fields using Laravel validators.
-   ![image](https://github.com/user-attachments/assets/3926e8c1-8f2f-4f86-97de-e53778185949)
-   ![image](https://github.com/user-attachments/assets/85b906df-88d7-4db5-9c80-0a6a24ba8cc7)
+   ![image](https://github.com/user-attachments/assets/7d1b9f16-ec4d-49a0-b6da-4d7e39565c62)
+   ![image](https://github.com/user-attachments/assets/588bbb39-f4bb-4681-9d0d-f85d861c1ebf)
+
+   
 
 
 4. **User Registration and Password Hashing**
@@ -22,11 +26,13 @@
 
 5. **Login Functionality**
    - Implement login using registered email and password.
-   ![image](https://github.com/user-attachments/assets/1704bda6-7b58-4714-87d1-3c008dc84bb0)
+   ![image](https://github.com/user-attachments/assets/bfb7bed0-3031-4746-90cd-4d80c64a8a7e)
+
 
 
 6. **Protected Dashboard**
    - Protect the dashboard using route middleware and display a message in login page.
-  ![image](https://github.com/user-attachments/assets/a41dd185-4b7f-4246-8ac1-6f023987b27f)
+  ![image](https://github.com/user-attachments/assets/57809f35-3411-4d81-9ff5-bcbf22df2319)
+
 
 
