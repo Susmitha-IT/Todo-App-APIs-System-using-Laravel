@@ -42,5 +42,4 @@ class UserController extends Controller
         return redirect()->back()->withInput($req->only('email'))->with('error', 'Invalid email or password');
     }
     }   
-
 }

@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\TaskController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -46,3 +47,8 @@ Route::get('logout',function()
 
 Route::view('dashboard','dashboard')->middleware('protectedPage');
 
+//apikey middleware to add and update task for users
+Route::middleware('auth.apikey')->group(function () {
+    Route::post('/todo/add', [TaskController::class, 'add']);
+    Route::post('/todo/status', [TaskController::class, 'updateStatus']);
+});
