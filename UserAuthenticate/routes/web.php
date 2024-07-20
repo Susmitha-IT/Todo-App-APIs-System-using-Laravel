@@ -45,10 +45,13 @@ Route::get('logout',function()
     return redirect('signin');
 });
 
-Route::view('dashboard','dashboard')->middleware('protectedPage');
+Route::view('dashboard','dashboard' )->middleware('protectedPage');
 
-//apikey middleware to add and update task for users
+
 Route::middleware('auth.apikey')->group(function () {
     Route::post('/todo/add', [TaskController::class, 'add']);
     Route::post('/todo/status', [TaskController::class, 'updateStatus']);
+    Route::get('/todo/tasks', [TaskController::class, 'getTasks']);
 });
+
+

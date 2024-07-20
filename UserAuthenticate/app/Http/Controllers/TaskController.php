@@ -6,6 +6,14 @@ use Illuminate\Http\Request;
 use App\Models\Task;
 class TaskController extends Controller
 {
+    public function getTasks()
+    {
+        $userId = session('user_id');
+        $tasks = Task::where('user_id', $userId)->get();
+        return response()->json([
+            'tasks' => $tasks
+        ]);
+    }
     public function add(Request $request)
     {
         $request->validate([

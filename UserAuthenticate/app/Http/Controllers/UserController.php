@@ -37,6 +37,7 @@ class UserController extends Controller
 
     if ($user && Hash::check($req->password, $user->password)) {
         $req->session()->put('user', $user->name);
+        $req->session()->put('user_id', $user->id); 
         return redirect('dashboard');
     } else {
         return redirect()->back()->withInput($req->only('email'))->with('error', 'Invalid email or password');
