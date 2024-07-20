@@ -54,7 +54,8 @@ return [
 
     'url' => env('APP_URL', 'http://localhost'),
 
-    'asset_url' => env('ASSET_URL', null),
+    'asset_url' => env('ASSET_URL', 'https://Susmitha-IT.github.io/User-Authentication-and-REST-Todo-APIs-System-using-Laravel'),
+
 
     /*
     |--------------------------------------------------------------------------
