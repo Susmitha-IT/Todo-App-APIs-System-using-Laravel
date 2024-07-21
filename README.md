@@ -1,3 +1,29 @@
+# Frontend Integration with REST APIs Using AJAX
+
+1. **Add Task**
+   - An AJAX POST request is sent to /todo/add to create a new task.
+     
+     ![image](https://github.com/user-attachments/assets/2551de57-89a3-4ba0-a949-d930165d8f09)
+
+2. **Fetch Tasks**
+   
+   - An AJAX GET request to /todo/tasks retrieves and displays the list of tasks for the logged-in user on the dashboard.
+  
+3. **Update Task Status**
+   
+   - AJAX POST requests to /todo/status handle status updates for tasks.
+     
+     ![image](https://github.com/user-attachments/assets/07bc1c98-942e-4e94-afe4-d0d8ff8dfbcb)
+     
+- Session ID: Utilized to ensure API requests are correctly associated with the logged-in user.
+- The dashboard utilizes Bootstrap for responsive design and styling.
+  
+  ![image](https://github.com/user-attachments/assets/45ffdeef-6d89-4bb9-aa3a-67c1073ec15d)
+  ![image](https://github.com/user-attachments/assets/9ed45582-aeb2-4ae3-8846-2276d1e1c602)
+
+
+
+     
 # Building Todo Application REST APIs with Laravel
 
 - Execution Video :  [Video](https://drive.google.com/file/d/158BBSZ6uM2cZ9lsq71u89cImYgmha2zK/view?usp=sharing)
