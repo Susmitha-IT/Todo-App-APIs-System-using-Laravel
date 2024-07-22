@@ -48,10 +48,5 @@ Route::get('logout',function()
 Route::view('dashboard','dashboard' )->middleware('protectedPage');
 
 
-Route::middleware('auth.apikey')->group(function () {
-    Route::post('/todo/add', [TaskController::class, 'add']);
-    Route::post('/todo/status', [TaskController::class, 'updateStatus']);
-    Route::get('/todo/tasks', [TaskController::class, 'getTasks']);
-});
 
 
