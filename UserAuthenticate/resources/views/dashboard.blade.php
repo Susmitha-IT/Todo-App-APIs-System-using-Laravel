@@ -96,7 +96,7 @@
                 const task = $('#task').val();
 
                 $.ajax({
-                    url: '/todo/add',
+                    url: '/api/todo/add',
                     method: 'POST',
                     headers: {
                         'API_KEY': apiKey
@@ -118,7 +118,7 @@
 
             function updateTaskStatus(taskId, status) {
                 $.ajax({
-                    url: '/todo/status',
+                    url: '/api/todo/status',
                     method:'POST',
                     headers: {
                         'API_KEY': apiKey

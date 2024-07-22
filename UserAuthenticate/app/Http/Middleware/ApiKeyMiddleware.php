@@ -16,8 +16,6 @@ class ApiKeyMiddleware
      */
     public function handle(Request $request, Closure $next)
     {
-        \Log::info('API_KEY: ' . $request->header('API_KEY'));
-        
         if ($request->header('API_KEY') !== 'helloatg') {
             return response()->json([
                 'status' => 0,

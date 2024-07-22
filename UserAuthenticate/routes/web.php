@@ -48,5 +48,6 @@ Route::get('logout',function()
 Route::view('dashboard','dashboard' )->middleware('protectedPage');
 
 
+Route::get('/todo/tasks', [TaskController::class, 'getTasks']);
 
 
